@@ -34,12 +34,12 @@ def verifySanitization(data):
     if data in lines:
         # locate where in the file the SQL code was found
         pos = lines.index(data)
-        print(f'The data was found on line: {pos} with the value of {lines[pos]}')
+        # print(f'The data was found on line: {pos} with the value of {lines[pos]}')
         return 'Unsanitized'
 
     # if the data is valid input return sanitized
     else:
-        print(f"{data} is valid input")
+        # print(f"{data} is valid input")
         return 'Sanitized'
 
 
